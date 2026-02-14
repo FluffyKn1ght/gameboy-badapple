@@ -35,18 +35,24 @@ Step 1. Obtain the frames and audio
 
 - Audio **MUST BE 4320Hz** for correct playback
 
-Step 2. Assemble
+Step 2. Generate bank files
+
+    1. Run `makebanks.py` to generate the data banks themselves 2. IF CHANGING VIDEO: change the value at line 134 in badapple.s (`ld a, 66`) to the number of video banks plus one
+
+    2. Run `genbankinclude.py <total number of banks>` to generate `banks.s`
+
+Step 3. Assemble
 
 ```
 rgbasm badapple.s -o badapple.o
 ```
 
-Step 3. Link
+Step 4. Link
 
 ```
 rgblink badapple.o -o badapple.gb -n badapple.sym -m badapple.map
 ```
 
-Step 4. Add a header to the ROM file (you can use `gbromheader.py` or `rgbfix` for this) - NOTE THAT THE NINTENDO LOGO AND HEADER CHECKSUM HAVE TO BE CORRECT FOR THE GAME TO WORK ON REAL HARDWARE!!
+Step 5. Add a header to the ROM file (you can use `gbromheader.py` or `rgbfix` for this) - NOTE THAT THE NINTENDO LOGO AND HEADER CHECKSUM HAVE TO BE CORRECT FOR THE GAME TO WORK ON REAL HARDWARE!!
 
-Step 5. Run the ROM on an emulator or flash it to an MBC3-capable flashcart
+Step 6. Run the ROM on an emulator or flash it to an MBC3-capable flashcart
