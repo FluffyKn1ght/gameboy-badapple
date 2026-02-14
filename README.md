@@ -47,7 +47,6 @@ Step 3. Link
 rgblink badapple.o -o badapple.gb -n badapple.sym -m badapple.map
 ```
 
-4. Add a header to the ROM file (you can use `gbromheader.py` or `rgbfix` for this)
-    - NOTE THAT THE NINTENDO LOGO AND HEADER CHECKSUM HAVE TO BE CORRECT FOR THE GAME TO WORK ON REAL HARDWARE!!
+Step 4. Add a header to the ROM file (you can use `gbromheader.py` or `rgbfix` for this) - NOTE THAT THE NINTENDO LOGO AND HEADER CHECKSUM HAVE TO BE CORRECT FOR THE GAME TO WORK ON REAL HARDWARE!!
 
-5. Run the ROM on an emulator or flash it to an MBC3-capable flashcart
+Step 5. Run the ROM on an emulator or flash it to an MBC3-capable flashcart
