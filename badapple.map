@@ -1,0 +1,537 @@
+SUMMARY:
+	ROM0: 1081 bytes used / 15303 free
+	ROMX: 2002116 bytes used / 13116 free in 123 banks
+	WRAM0: 5 bytes used / 4091 free
+
+ROM0 bank #0:
+	SECTION: $0000-$003f ($0040 bytes) ["RSTVector"]
+	SECTION: $0040-$0061 ($0022 bytes) ["InterruptVector"]
+	EMPTY: $0062-$00ff ($009e bytes)
+	SECTION: $0100-$0102 ($0003 bytes) ["EntryPoint"]
+	EMPTY: $0103-$014f ($004d bytes)
+	SECTION: $0150-$0523 ($03d4 bytes) ["ROM0Code"]
+	         $0150 = EntryPoint
+	         $020e = EntryPoint.wait_for_interrupt
+	         $0212 = HBlankHandler
+	         $0239 = HBlankHandler.update_dac
+	         $0248 = HBlankHandler.skip
+	         $024c = VBlankHandler
+	         $025c = VBlankHandler.do_not_skip_frame
+	         $0278 = VBlankHandler.after_bank_check_1
+	         $0285 = VBlankHandler.after_bank_check_2
+	         $0288 = VBlankHandler.copy_video
+	         $04ae = EndPlayback
+	         $04b7 = FillMemory
+	         $04b8 = FillMemory.loop
+	         $04c6 = CopyMemory
+	         $04c7 = CopyMemory.loop
+	         $04d4 = WaitForVBlank
+	         $04db = WaitForVBlank.loop
+	         $04e1 = NextVideoBank
+	         $04f4 = VRAMTiles
+	EMPTY: $0524-$3fff ($3adc bytes)
+	TOTAL EMPTY: $3bc7 bytes
+
+ROMX bank #1:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM1Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #2:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM2Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #3:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM3Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #4:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM4Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #5:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM5Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #6:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM6Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #7:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM7Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #8:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM8Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #9:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM9Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #10:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM10Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #11:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM11Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #12:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM12Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #13:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM13Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #14:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM14Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #15:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM15Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #16:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM16Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #17:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM17Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #18:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM18Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #19:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM19Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #20:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM20Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #21:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM21Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #22:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM22Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #23:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM23Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #24:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM24Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #25:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM25Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #26:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM26Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #27:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM27Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #28:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM28Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #29:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM29Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #30:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM30Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #31:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM31Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #32:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM32Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #33:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM33Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #34:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM34Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #35:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM35Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #36:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM36Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #37:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM37Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #38:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM38Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #39:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM39Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #40:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM40Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #41:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM41Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #42:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM42Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #43:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM43Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #44:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM44Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #45:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM45Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #46:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM46Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #47:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM47Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #48:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM48Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #49:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM49Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #50:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM50Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #51:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM51Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #52:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM52Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #53:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM53Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #54:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM54Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #55:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM55Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #56:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM56Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #57:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM57Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #58:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM58Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #59:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM59Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #60:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM60Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #61:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM61Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #62:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM62Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #63:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM63Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #64:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM64Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #65:
+	SECTION: $4000-$5b96 ($1b97 bytes) ["ROM65Data"]
+	EMPTY: $5b97-$7fff ($2469 bytes)
+	TOTAL EMPTY: $2469 bytes
+
+ROMX bank #66:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM66Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #67:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM67Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #68:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM68Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #69:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM69Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #70:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM70Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #71:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM71Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #72:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM72Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #73:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM73Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #74:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM74Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #75:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM75Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #76:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM76Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #77:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM77Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #78:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM78Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #79:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM79Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #80:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM80Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #81:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM81Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #82:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM82Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #83:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM83Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #84:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM84Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #85:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM85Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #86:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM86Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #87:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM87Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #88:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM88Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #89:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM89Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #90:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM90Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #91:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM91Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #92:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM92Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #93:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM93Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #94:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM94Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #95:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM95Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #96:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM96Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #97:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM97Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #98:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM98Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #99:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM99Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #100:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM100Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #101:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM101Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #102:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM102Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #103:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM103Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #104:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM104Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #105:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM105Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #106:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM106Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #107:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM107Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #108:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM108Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #109:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM109Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #110:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM110Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #111:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM111Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #112:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM112Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #113:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM113Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #114:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM114Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #115:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM115Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #116:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM116Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #117:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM117Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #118:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM118Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #119:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM119Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #120:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM120Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #121:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM121Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #122:
+	SECTION: $4000-$7fff ($4000 bytes) ["ROM122Data"]
+	TOTAL EMPTY: $0000 bytes
+
+ROMX bank #123:
+	SECTION: $4000-$712c ($312d bytes) ["ROM123Data"]
+	EMPTY: $712d-$7fff ($0ed3 bytes)
+	TOTAL EMPTY: $0ed3 bytes
+
+WRAM0 bank #0:
+	SECTION: $c000-$c004 ($0005 bytes) ["WorkRAM0"]
+	         $c000 = wCurrentVideoBank
+	         $c001 = wCurrentAudioBank
+	         $c002 = wCurrentFrameHalf
+	         $c003 = wSkipFrame
+	         $c004 = wSkipSample
+	EMPTY: $c005-$cfff ($0ffb bytes)
+	TOTAL EMPTY: $0ffb bytes
