@@ -37,12 +37,9 @@ Step 1. Obtain the frames and audio
 
 Step 2. Generate bank files
 
-<<<<<<< HEAD - Run `makebanks.py` to generate the data banks themselves. IF CHANGING VIDEO: change the value at line 134 in badapple.s (`ld a, 66`) to the number of video banks plus one
-======= - Run `makebanks.py` to generate the data banks themselves 2. IF CHANGING VIDEO: change the value at line 134 in badapple.s (`ld a, 66`) to the number of video banks plus one
+- Run `makebanks.py` to generate the data banks themselves. IF CHANGING VIDEO: change the value at line 134 in badapple.s (`ld a, 66`) to the number of video banks plus one
 
-> > > > > > > 401253060651c50634d3b8369f36a8c40c404a9c
-
-    - Run `genbankinclude.py <total number of banks>` to generate `banks.s`
+- Run `genbankinclude.py <total number of banks>` to generate `banks.s`
 
 Step 3. Assemble
 
