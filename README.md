@@ -4,9 +4,9 @@
 
 🖥️ **Video:** 20x16 1bpp @ ~30FPS
 
-🔉 **Sound:** 4320Hz 2bpp via [Pokemon Yellow/Wave Channel DAC)](https://www.youtube.com/watch?v=fooSxCuWvZ4) trick
+🔉 **Sound:** 4320Hz 2bpp via [Pokemon Yellow/Wave Channel DAC](https://www.youtube.com/watch?v=fooSxCuWvZ4) trick
 
-💾 **Storage:** MBC3, 128 bank mode (123 banks [~1.9MB]) used
+💾 **Storage:** MBC3, 128 bank mode (123 banks [~1.9MB] used)
 
 🎛️ **Hardware:** Will run on any DMG-CPU GameBoy-compatible device
 
